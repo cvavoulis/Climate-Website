@@ -6,9 +6,13 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="containter-fluid">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -18,16 +22,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Latitude</a>
+                <a class="navbar-brand" href="newfile.html">Latitude</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Plots
+                        <a href="#" class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" role="menu" aria-haspopup="true" aria-expanded="false">Plots
                             <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu" >
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <li>
                                 <a class="dropdown-item" href="temp.html">Temperature</a>
                             </li>
@@ -40,8 +44,9 @@
                             <li>
                                 <a class="dropdown-item" href="wind.html">Wind Speed</a>
                             </li>
+                     
                         </ul>
-                
+                    </li>
                     <li>
                         <a href="comparison.html">Comparison</a>
                     </li>
@@ -53,46 +58,37 @@
 
         </div>
        </nav>
-    <div class="containter">
-     
-
-
-  <div id="header">
-    <div class="col-md-8">
-      <h2>Summary: Latitude VS. X</h2>
     </div>
-    <div class="col-md-4">
-      <h2>Visualizations</h2>
-    </div>
-  </div>
-
-  <div id="content">
-    <div class="col-md-8">
-        <img id="latitude_temp_main" src="Resources/assets/images/Fig1.png" alt="Latitude Vs. X"/>
-      
    
+<div class="containter">
+  <div id="header">
+    <div class="col-md-8 box">
+      <h2>Summary: Latitude VS. X</h2>
+      <hr>
+      <img id="latitude_temp_main" src="Resources/assets/images/Fig1.png" alt="Latitude Vs. X"/>
         <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. </p>
         <br>
         <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlation witnessed. </p>
-      </div>
-      <div class="col-md-4">
-        <a href="temp.html">
-          <img id="latitude_temp" src="Resources/assets/images/Fig1.png" alt="Latitude Vs. Max Temp" href="temp.html"/>
-        </a>
-        <a href="humidity.html">
-          <img id="latitude_humidity" src="Resources/assets/images/Fig2.png" alt="Latitude Vs. Humidity" href="humidity.html"/>
-        </a>
-        <a href="cloudiness.html">
-          <img id="latitude_cloudiness" src="Resources/assets/images/Fig3.png" alt="Latitude Vs. Cloudiness" href="cloudiness.html"/>
-        </a>
-        <a href="wind.html">
-          <img id="latitude_wind" src="Resources/assets/images/Fig4.png" alt="Latitude Vs. Wind Speed" href="wind.html"/>
-        </a>
-        </div>
-
-
+    </div>
+    <div class="col-md-4 box">
+      <h2>Visualizations</h2>
+      <hr>
+      <a href="temp.html">
+        <img id="latitude_temp" src="Resources/assets/images/Fig1.png" alt="Latitude Vs. Max Temp" href="temp.html"/>
+      </a>
+      <a href="humidity.html">
+        <img id="latitude_humidity" src="Resources/assets/images/Fig2.png" alt="Latitude Vs. Humidity" href="humidity.html"/>
+      </a>
+      <a href="cloudiness.html">
+        <img id="latitude_cloudiness" src="Resources/assets/images/Fig3.png" alt="Latitude Vs. Cloudiness" href="cloudiness.html"/>
+      </a>
+      <a href="wind.html">
+        <img id="latitude_wind" src="Resources/assets/images/Fig4.png" alt="Latitude Vs. Wind Speed" href="wind.html"/>
+      </a>
+    </div>
   </div>
 
+</div>
 
  </div>
 
