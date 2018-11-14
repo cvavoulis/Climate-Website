@@ -35,4 +35,5 @@ The website must, at the top of every page, have a navigation menu that:
 
 # Deploy
 The website is deployed to GitHub pages.
+[Link to the Website](https://cvavoulis.github.io/Climate-Website/)
 
