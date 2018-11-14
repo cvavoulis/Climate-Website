@@ -31,7 +31,6 @@ The website includes seven pages:
   * The table is a bootstrap table component.
   * The data comes from exporting the `.csv` file as HTML, or converting it to HTML. 
 
-The website must, at the top of every page, have a navigation menu that:
 
 # Deploy
 The website is deployed to GitHub pages.
